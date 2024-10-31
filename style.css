@@ -25,9 +25,9 @@ img {
 
 .options {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin-bottom: 20px;
 }
 
