@@ -2,7 +2,10 @@
   background: #666;
   box-sizing: border-box;
   font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,16 +14,15 @@ body {
 }
 
 h1 {
+  margin: 20px;
+  padding: 20px;
   font-size: 44px;
 }
 
 h2 {
+  margin: 15px;
+  padding: 15px;
   font-size: 34px;
-}
-
-img {
-  width: 175px;
-  height: 175px;
 }
 
 .options {
@@ -36,34 +38,41 @@ select:hover {
 }
 
 main {
-  width: 70%;
-  height: 70vh;
+  max-width: 75%;
+  /* max-height: 70vh; */
   border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .images-container {
-  height: 70%;
-  width: 70%;
-  background-color: gray;
-  overflow: hidden;
+  min-height: 75%;
+  min-width: 75%;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  /* overflow: hidden; */
 }
+img {
+  width: 198px;
+  height: 198px;
+}
+
 .tool-bar {
-  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 100%;
 }
 
 .breed-container,
+.random-container,
 .count-container {
   padding: 10px;
 }
@@ -74,7 +83,6 @@ main {
 }
 
 .btn {
-  /* position: absolute; */
   margin: 10px;
   padding: 7px;
 }
